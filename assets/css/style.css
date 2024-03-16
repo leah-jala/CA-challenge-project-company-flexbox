@@ -1,0 +1,303 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 1400px;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+/* Navitation section */
+
+.banner {
+    background: black;
+    color:white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.logo {
+    flex: 1 1 auto;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    padding: 10px 20px;;
+
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 3 1 auto;
+
+}
+nav ul li {
+    margin: 0 10px;
+    align-items: center;
+
+}
+
+nav a {
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+    /* Initial color */
+    color: black; 
+    /* Prevent layout shifts */
+    display: inline-block;
+
+}
+
+nav a:hover {
+    color: rgb(170, 17, 17);
+    transform: scale(1.2); /* Increase size by 20% */
+}
+
+/* Hero image section */
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%; /* Adjust this as needed to fit your design */
+    height: 100vh; /* Adjust this as needed to fit your design */
+
+    align-items: center; /* This will vertically align the items if their heights are different */
+}
+
+.action h2 {
+    font-size: 4rem;;
+}
+
+.action, .hero {
+    flex: 1; /* This makes both the action and hero take up equal space */
+    height: auto; /* Adjust the height as needed */
+}
+
+.action {
+    padding: 20px; /* Add padding to ensure the text does not touch the sides of the container */
+}
+
+.hero {
+    max-width: 50%; /* Ensures the image is responsive and fits within its flex item container */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensures the image covers its area well without stretching. Note: This works if .*/
+}
+
+.btn {
+    padding: 14px 25px;
+    background: black;
+    color: white;
+    text-align: center;
+    text-emphasis: none;
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 20px;
+    border-radius: 10px;
+
+}
+
+.btn:hover {
+    background: #aa1111;
+    color: white;
+}
+
+
+.subtitle {
+    margin-bottom: 20px;
+}
+
+/* Featured section */
+/* Style for the section that contains the cards */
+.featured-growers {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Center-align the text for the whole section, including the title */
+    padding: 20px; /* Add some padding for aesthetics */
+    margin-top: 50px; /* Add some space between the sections */
+    background-color: #ebebeb;
+    padding-bottom: 60px;
+
+}
+
+/* Style for the wrapper that holds the cards */
+.card-wrapper {
+    display: flex;
+    flex-wrap: wrap; /* Allow the cards to wrap onto the next line */
+    justify-content: center; /* Center the cards in the container */
+    gap: 20px; /* Add some space between the cards */
+    max-width: 1200px; /* Maximum width of the wrapper */
+}
+
+/* Style for each individual card */
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center-align the items inside the card */
+    width: 100%;
+    max-width: 300px; /* Maximum width for each card */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: add some shadow for depth */
+    margin: 10px; /* Margin around each card */
+    padding: 20px; /* Padding inside each card */
+    background: white; /* Background color of the card */
+    border-radius: 8px; /* Optional: round the corners */
+}
+
+.card img {
+    width: 100%; /* Make the image fill the card width */
+    height: 350px; /* Keep the image aspect ratio */
+    object-fit: cover; /* Ensure the image covers the entire area */
+    border-radius: 8px; /* Optional: round the corners of the image */
+}
+
+/* Ensure the card contents have the same height */
+.card h3, .card p {
+    margin: 10px 0; /* Add some space around the text */
+}
+
+/* Use Flexbox to make the text container fill the remaining space, forcing all cards to the same height */
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space content evenly */
+}
+
+/* Mission section */
+#m-color {
+    background-color: rgb(170, 17, 17, 0.8);
+    padding: 20px;
+    margin-bottom: 0; !important;
+    color: white;
+
+}
+.promise {
+    width: 100%;
+    background-image: url("/assets/images/pexels-min-an-981091.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 600px; /* Set a minimum height for visibility */
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; /* Adjust this to center if you want vertical alignment */
+    padding: 20px;
+    text-align: left; /* Ensures text within is aligned to the left */
+}
+
+
+.promise p {
+    width: 60%;
+    background-color: #aa1111;
+    opacity: 0.8;
+    padding: 20px;
+    align-self: flex-end;
+    margin: 20px;
+}
+
+
+.team {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: left;
+    padding: 20px;
+    background-color: #ebebeb;
+    color: black;
+}
+
+.team-members {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 1200px;
+}
+
+.team-members img {
+    width: 250px;
+    height: auto;
+    object-fit: cover;
+}
+
+.team-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+.team-members h3 {
+    margin-top: 20px;
+}
+
+/* Footer section */
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+/* Media query for nav on smaller screens */
+@media only screen and (max-width: 768px) { /* Adjust the breakpoint as needed */
+    nav {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: center; /* Center align the flex items */
+    }
+
+    .logo, nav ul {
+        flex: none; /* Override flex-grow/shrink settings for smaller screens */
+        margin-top: 10px; /* Add some space between the logo and the nav items */
+    }
+    .image-container {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+
+    .action, .hero {
+        max-width: 100%; /* Adjust the width as needed */
+        align-items: center; /* Center align the items */
+    }
+
+    .hero {
+        order: -1; /* Move the image to the top */
+        max-width: 100%; /* Adjust the width as needed */
+    }
+
+    .action {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center align the text */
+        justify-content: center; /* Center align the text */
+        text-align: center; /* Center align the text */
+    }
+
+    .small-screen {
+        width: 100%; /* Adjust the width as needed */
+        align-self: center; /* Center align the text */
+    }
+
+    .promise p {
+        width: 100%; /* Adjust the width as needed */
+    }
+}
+
+@media only screen and (min-width: 768px) { /* Adjust this breakpoint as needed */
+    .subtitle {
+        width: 100%;
+        text-align: left;
+    }
+}
